@@ -1,0 +1,17 @@
+<mat-card class="card" appearance="outlined">
+  <mat-card-header>
+    <mat-card-title class="title"
+      >{{ index + 1 }}. {{ movie.title }}. {{ movie.release_date | date : "yyyy" }}</mat-card-title
+    >
+    <mat-card-subtitle></mat-card-subtitle>
+  </mat-card-header>
+  <img class="image" [src]="imageSrc" alt="img" />
+  <mat-card-content>
+    <p>
+      {{ filteredGenre }}
+    </p>
+    <p>{{movie.id}}</p>
+    <p>Average rating: {{ movie.vote_average }} ({{ movie.vote_count | number : "1.0-1" }}k votes)</p>
+  </mat-card-content>
+  <mat-card-actions></mat-card-actions>
+</mat-card>

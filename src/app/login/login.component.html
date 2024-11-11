@@ -1,0 +1,13 @@
+<section class="login">
+  <form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+    <mat-form-field class="login__field">
+      <mat-label>username</mat-label>
+      <input formControlName="username" matInput />
+    </mat-form-field>
+    <mat-form-field class="login__field">
+      <mat-label>password</mat-label>
+      <input formControlName="password" matInput type="password" />
+    </mat-form-field>
+    <button [disabled]="loginForm.invalid" class="login__button" mat-flat-button>Sign in</button>
+  </form>
+</section>

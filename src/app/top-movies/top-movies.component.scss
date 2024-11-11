@@ -1,0 +1,15 @@
+.main {
+    justify-content: center;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, 300px);
+    height: calc(100vh - 64px);
+    overflow-y: scroll;
+    position: relative;
+}
+.spinner {
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, 0);
+}

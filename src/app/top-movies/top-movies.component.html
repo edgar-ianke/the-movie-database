@@ -1,0 +1,10 @@
+<section class="main" (scroll)="onScroll($event)">
+  @for (item of topMovies; track $index) {
+  <app-movie-card [movie]="item" [index]="$index" [genres]="genres"></app-movie-card>
+  } @if (isLoading) {
+  <div class="spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+
+  }
+</section>

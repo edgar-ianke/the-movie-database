@@ -1,0 +1,13 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &__field {
+    display: block;
+    width: 300px;
+  }
+  &__button {
+    margin: 0 auto;
+  }
+}
